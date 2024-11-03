@@ -9,7 +9,7 @@ function Landingpage() {
         <div className="landingpage-container">
             <div className="mainimg-wrapper">
                 <div className="mainimg-container">
-                    <img src="/shoeimg.png" alt="landingpageimg" />
+                    <img className='shoeimg' src="/shoeimg.png" alt="landingpageimg" />
                     <img className='premiumshoestext' src="/premiumshoestext.png" alt="landingpageimg" />
                     <div className="landingpage-description">
                         <div className="desc-text">Starting at $119/-</div>

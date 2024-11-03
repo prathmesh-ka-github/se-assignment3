@@ -50,7 +50,7 @@ function Bag() {
                             </div>
                             <div className="desc">
                                 <div className="itemname"> {product.name}</div>
-                                <button onClick={() => removeFromCart(product.id)}>Remove from cart</button>
+                                <button onClick={() => removeFromCart(product.id)}>Remove from Bag</button>
                             </div>
                         </div>
                     ))

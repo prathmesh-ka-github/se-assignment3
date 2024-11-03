@@ -2,7 +2,8 @@ const mongoose = require("mongoose")
 
 const wishlistSchema = new mongoose.Schema({
     id : Number,
-    name : String,
+    name: String,
+    imgurl : String
 });
 
 const wishlistModal = mongoose.model("wishlist", wishlistSchema)

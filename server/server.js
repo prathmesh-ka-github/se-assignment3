@@ -107,6 +107,54 @@ app.post('/removecart', async (req,res) => {
         console.error(err);
     }
 })
+app.post('/removewishlist', async (req,res) => {
+    try {
+        console.log(req.body)
+        const id = req.body.id;
+        const data = {id: id}
+        console.log("Removing item from Wishlist . . .")
+        removeFromWishlist(data)
+        res.status(201)
+        res.send({
+            err : 'Item removed from the Wishlist!',
+            code : 400
+        })
+    } catch (err) {
+        console.error(err);
+    }
+})
+
+
+app.post('/wishlist', async (req,res) => {
+    try {
+        console.log(req.body)
+        const id = req.body.id;
+        const name = req.body.name;
+        const imgurl = req.body.imgurl;
+        const data = {id: id, name: name, imgurl: imgurl}
+        let result = await checkWishlist(data)
+        // console.log(result)
+        if(result) {
+            console.log("item not found...adding item to Wishlist.")
+            // console.log(data)
+            addToWishlist(data)
+            res.status(201)
+            res.send({
+                err : 'Item added to the Wishlist!',
+                code : 400
+            })
+        }
+        else {
+            res.send({
+                err : 'Item already in the Wishlist!',
+                code : 400
+            })
+            console.log("ERR - item already in Wishlist")
+        }
+    } catch (err) {
+        console.error(err);
+    }
+})
 
 
 //! TEST
@@ -125,8 +173,6 @@ app.listen(port,() => {
 
 
 //! FUNCTIONS
-
-
 async function checkCart(item) {
     try {
         if (await Cart.findOne({id : item.id}) !== null) {
@@ -139,11 +185,10 @@ async function checkCart(item) {
         console.error(err)
     }
 }
-
 async function addToCart(item) {
     try {
         await Cart.create(item)
-        console.log("item added successfully", item)      
+        console.log("item added to bag successfully", item)      
     } catch (err) {
         console.error(err.message)
     }
@@ -152,7 +197,36 @@ async function addToCart(item) {
 async function removeFromCart(itemid) {
     try {
         await Cart.deleteOne({id: itemid.id})
-        console.log("item deleted successfully", itemid)      
+        console.log("item deleted from bag successfully", itemid)      
+    } catch (err) {
+        console.error(err.message)
+    }
+}
+// !------------WISHLIST--------------
+async function checkWishlist(item) {
+    try {
+        if (await Wishlist.findOne({id : item.id}) !== null) {
+            return 0
+        }
+        else {
+            return 1
+        }
+    } catch (err) {
+        console.error(err)
+    }
+}
+async function addToWishlist(item) {
+    try {
+        await Wishlist.create(item)
+        console.log("item added to wishlist successfully", item)      
+    } catch (err) {
+        console.error(err.message)
+    }
+}
+async function removeFromWishlist(itemid) {
+    try {
+        await Wishlist.deleteOne({id: itemid.id})
+        console.log("item deleted from wishlist successfully", itemid)      
     } catch (err) {
         console.error(err.message)
     }

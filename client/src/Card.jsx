@@ -19,6 +19,19 @@ function Card(props) {
             console.log(err);
         })
     } 
+    async function addToWishlist(itemID, itemName, itemImgURL){
+        console.log(itemID, itemImgURL);
+        const response = await axios.post("http://localhost:3000/wishlist", {
+            id: itemID,
+            name: itemName,
+            imgurl : itemImgURL
+        }).then(function(res){
+            console.log(res)
+            alert(res.data.err)
+        }).catch(function(err) {
+            console.log(err);
+        })
+    } 
     return (
         <div className="card-container">
             <div className="card-img">
@@ -27,8 +40,8 @@ function Card(props) {
             <div className="card-name">{name}</div>
             <div className="card-price">${price} /-</div>
             <div className="buttons">
-                <button id="addcart" onClick={() => addToCart(id, name, imgurl)}>Add to cart</button>
-                <button id="wishlist">Add to wishlist</button>
+                <button id="addcart" onClick={() => addToCart(id, name, imgurl)}>Add to Bag</button>
+                <button id="wishlist" onClick={() => addToWishlist(id, name, imgurl)}>Add to wishlist</button>
             </div>
         </div>
     )
