@@ -1,0 +1,58 @@
+[
+    {
+        "id":"1",
+        "name": "New Balance 530 Sneakers",
+        "imgurl": "/newbalanceshoe1.png",
+        "price":200,
+        "desc": ""
+    },
+    {
+        "id":"2",
+        "name": "New Balance 574 Athletics",
+        "imgurl": "/newbalanceshoe2.png",
+        "price":200,
+        "desc": "Get moving with the lightweight comfort of the new 574 Athletic Shoe from New Balance! The sleek 574 Athletic Shoe updates the iconic style with combination suede and mesh uppers, ENCAP® midsoles for comfort, and flexible rubber outsoles for traction. Combination suede and mesh upper. Soft textile lining. Padded tongue and collar for added comfort and support. Signature ENCAP® midsole provides lightweight, shock-absorbing comfort. Durable rubber outsole delivers flexible traction. Combination suede and mesh upper."
+    },
+    {
+        "id":"3",
+        "name": "New Balance 574 Core Sneakers",
+        "imgurl": "/newbalanceshoe3.png",
+        "price":200,
+        "desc": "The 574 was built to be a reliable shoe that could do a lot of different things well rather than as a platform for revolutionary technology, or as a premium materials showcase. This unassuming, unpretentious versatility is exactly what launched the 574 into the ranks of all-time greats. As hybrid road/trail design built on a wider last than the previous generation’s narrow racing silhouettes, the 574 offered a uniquely versatile mix of new, different, uncomplicated, rugged, durable, and comfortable that was adopted as a closet staple across the globe. Weigt 323.6 grams (11.4 oz). Material - Suede/mesh upper and Vamp, collar and tongue mesh are 100% recycled polyester."
+    },
+    {
+        "id":"4",
+        "name": "Cloud Nova 2",
+        "imgurl": "/cloudnova.png",
+        "price":200,
+        "desc": "A cushioned, everyday hero. This shoe fuses everything we know about running tech into a street-ready, all-day sneaker. Weight: 314.6g. Bold and distinctive design DNA Comes in a 100% recycled paper box. Improved step-in experience, Speedboard® attached to heel clip for support and heel hold, 50% bio-attributed Zero-Gravity foam midsole, With 20% less CO2e emissions than standard EVA midsoles. Stabilized heel pillow for added stability and speed."
+    },
+    {
+        "id":"5",
+        "name": "Adidas Campus 00s",
+        "imgurl": "/adidasshoe1.png",
+        "price":200,
+        "desc": "A cushioned, everyday hero. This shoe fuses everything we know about running tech into a street-ready, all-day sneaker. Weight: 314.6g. Bold and distinctive design DNA Comes in a 100% recycled paper box. Improved step-in experience, Speedboard® attached to heel clip for support and heel hold, 50% bio-attributed Zero-Gravity foam midsole, With 20% less CO2e emissions than standard EVA midsoles. Stabilized heel pillow for added stability and speed."
+    },
+    {
+        "id":"6",
+        "name": "Under Armour Lockdown 7",
+        "imgurl": "/underarmourshoe1.png",
+        "price":200,
+        "desc": "A cushioned, everyday hero. This shoe fuses everything we know about running tech into a street-ready, all-day sneaker. Weight: 314.6g. Bold and distinctive design DNA Comes in a 100% recycled paper box. Improved step-in experience, Speedboard® attached to heel clip for support and heel hold, 50% bio-attributed Zero-Gravity foam midsole, With 20% less CO2e emissions than standard EVA midsoles. Stabilized heel pillow for added stability and speed."
+    },
+    {
+        "id":"7",
+        "name": "Puma Suede Sneakers",
+        "imgurl": "/pumashoe1.png",
+        "price":200,
+        "desc": "A cushioned, everyday hero. This shoe fuses everything we know about running tech into a street-ready, all-day sneaker. Weight: 314.6g. Bold and distinctive design DNA Comes in a 100% recycled paper box. Improved step-in experience, Speedboard® attached to heel clip for support and heel hold, 50% bio-attributed Zero-Gravity foam midsole, With 20% less CO2e emissions than standard EVA midsoles. Stabilized heel pillow for added stability and speed."
+    },
+    {
+        "id":"8",
+        "name": "On Running Cloudtilt",
+        "imgurl": "/onshoe1.png",
+        "price":200,
+        "desc": "A cushioned, everyday hero. This shoe fuses everything we know about running tech into a street-ready, all-day sneaker. Weight: 314.6g. Bold and distinctive design DNA Comes in a 100% recycled paper box. Improved step-in experience, Speedboard® attached to heel clip for support and heel hold, 50% bio-attributed Zero-Gravity foam midsole, With 20% less CO2e emissions than standard EVA midsoles. Stabilized heel pillow for added stability and speed."
+    }
+]

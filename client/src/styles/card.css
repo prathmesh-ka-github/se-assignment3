@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+.card-container {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    font-family: Kodchasan, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin: 50px;
+}
+
+.card-container:hover {
+    transform: translate(10px, -20px);
+}
+
+a {
+    all: unset;
+}
+
+.card-img img{
+    width: 200px;
+}
+
+.card-name {
+    font-size: 20px;
+    padding-top: 40px;
+    width: 300px;
+    text-align: center;
+}
+.card-price {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+
+.buttons button {
+    all: unset;
+    background-color: #1B4BF5;
+    border: 2px solid #1B4BF5;
+    padding: 10px;
+    color: white;
+    border-radius: 40px;
+}
+
+.buttons button:hover {
+    background-color: transparent;
+    border: 2px solid #1B4BF5;
+    color: #1B4BF5;
+}
+#addcart {
+    background-color: #33e633;
+    border: 2px solid #33e633;
+}
+
+#addcart:hover {
+    background-color: transparent;
+    color: #33e633;
+    border: 2px solid #33e633;
+}
+#removecart {
+    display: none;
+    background-color: #DA1313;
+    border: 2px solid #DA1313;
+}
+
+#removecart:hover {
+    background-color: transparent;
+    color: #DA1313;
+    border: 2px solid #DA1313;
+}

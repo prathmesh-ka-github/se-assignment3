@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Crushed&display=swap');
+
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-family: Crushed, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 60px;
+    backdrop-filter: blur(100px);
+    z-index: 10;
+}
+.navlogo img {
+    width: 25px;
+}
+
+.center-navlinks-container {
+    font-size: 20px;
+}
+
+.center-navlinks-container a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.right-navlinks-container {
+    display: flex;
+    align-items: center;
+}
+
+.right-navlinks-container img{
+    padding: 10px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#heartnavbar {
+    height: 20px;
+}
