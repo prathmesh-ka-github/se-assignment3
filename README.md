@@ -29,7 +29,7 @@ To install all the dependencies needed for the server side application.
     > npm run server
 ```
 Running the script to start the server.  
-Now server is all setup and running. We have to start the client side now.  
+Now server is all setup and running on "http://localhost:3000/". We have to start the client side now.  
 
 2. ### Starting the client side (REACTJS) -  
 Run these following commands in the terminal -   
@@ -45,6 +45,7 @@ To install all the dependencies needed for the client side application.
     > npm run dev
 ```
 Running the script to start the client side application.  
+Open http://localhost:5173 on your browser.
 
 
 ## Web address of deployed application
