@@ -48,6 +48,9 @@ Running the script to start the client side application.
 Open http://localhost:5173 on your browser.
 
 
-## Web address of deployed application
+## Web address of deployed application  
 
-## IP Address of EC2 instance
+I didnt complete the deployment.
+
+## IP Address of EC2 instance  
+I didnt complete the deployment.
