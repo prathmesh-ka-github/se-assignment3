@@ -68,10 +68,8 @@ app.post('/cart', async (req,res) => {
         const imgurl = req.body.imgurl;
         const data = {id: id, name: name, imgurl: imgurl}
         let result = await checkCart(data)
-        // console.log(result)
         if(result) {
             console.log("item not found...adding item to Bag.")
-            // console.log(data)
             addToCart(data)
             res.status(201)
             res.send({
